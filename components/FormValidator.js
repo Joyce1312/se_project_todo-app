@@ -70,6 +70,11 @@ class FormValidator {
     });
     this._setEventListeners();
   }
+
+  resetValidation() {
+    this._formElement.reset();
+    this._buttonElement.disabled = true;
+  }
 }
 
 export default FormValidator;
